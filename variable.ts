@@ -43,14 +43,40 @@
 
 
 
-function main(Name:String) {
-    setTimeout(() => {
-        secound(Name);
-    }, 4000);
+// function main(Name:String) {
+//     setTimeout(() => {
+//         secound(Name);
+//     }, 4000);
+// }
+
+// function secound(Name:String) {
+//     console.log(Name);
+// }
+
+// main("GYANVENDRA SINGH");
+
+
+// INTERFACE 
+
+interface User {
+    FirstName: String,
+    LastName: String,
+    Age: number
 }
 
-function secound(Name:String) {
-    console.log(Name);
+function isLegal(user:User) {
+    if(user.Age>=18){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
-main("GYANVENDRA SINGH");
+let x =isLegal({
+    FirstName:"Gyanvendra",
+    LastName:"Singh",
+    Age:2,
+})
+
+console.log(x);
