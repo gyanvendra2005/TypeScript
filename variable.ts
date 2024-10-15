@@ -22,5 +22,35 @@
 //     console.log("THE SUM OF THE TWO NUMBERS ARE: "+ (num1+num2));
     
 // }
-
 // sum(20,10);
+
+// 18+ CHECK
+
+// function Adult(age:number):boolean{
+//       if(age>=18){
+//         return true;
+//       }
+//       else{ 
+//         return false;
+//     }
+// }
+
+// let x = Adult(17);
+// console.log(x);
+
+
+//  TAKE A FUNCTION THAT TAKES ANOTHER FUNCTION AS AN INPUT AND RUNS AFTER 1 SEC
+
+
+
+function main(Name:String) {
+    setTimeout(() => {
+        secound(Name);
+    }, 4000);
+}
+
+function secound(Name:String) {
+    console.log(Name);
+}
+
+main("GYANVENDRA SINGH");
