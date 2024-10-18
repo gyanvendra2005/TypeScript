@@ -61,7 +61,8 @@
 interface User {
     FirstName: String,
     LastName: String,
-    Age: number
+    Age: number,
+    Email?:String  // EMAIL FEILD IS OPTIONAL USER MAY GIVE EMAIL OR NOT
 }
 
 function isLegal(user:User) {
